@@ -47,4 +47,5 @@ public class MemberDTO {
     public String toString() {
         return "MemberDTO{" + "id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + '}';
     }
+
 }

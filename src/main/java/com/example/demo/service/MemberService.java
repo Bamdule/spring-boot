@@ -9,4 +9,6 @@ import com.example.demo.dto.MemberDTO;
 public interface MemberService {
 
     MemberDTO getMember();
+    
+    MemberDTO getMemberForLogin(String email);
 }

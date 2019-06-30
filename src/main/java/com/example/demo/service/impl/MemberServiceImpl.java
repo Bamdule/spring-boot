@@ -22,4 +22,9 @@ public class MemberServiceImpl implements MemberService {
         return memberMapper.getMember();
     }
 
+    @Override
+    public MemberDTO getMemberForLogin(String email) {
+        return memberMapper.getMemberForLogin(email);
+    }
+
 }

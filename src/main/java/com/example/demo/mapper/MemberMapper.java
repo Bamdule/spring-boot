@@ -1,7 +1,6 @@
 package com.example.demo.mapper;
 
 import com.example.demo.dto.MemberDTO;
-import java.util.Map;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
@@ -12,5 +11,7 @@ import org.apache.ibatis.annotations.Mapper;
 public interface MemberMapper {
 
     MemberDTO getMember();
+
+    MemberDTO getMemberForLogin(String email);
 
 }

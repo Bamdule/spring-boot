@@ -5,5 +5,12 @@
     <select id="getMember" resultType="com.example.demo.dto.MemberDTO">
         SELECT * FROM member
     </select>
+    
+    <select id="getMemberForLogin" parameterType="string" resultType="MemberDTO">
+        SELECT 
+            *
+        FROM member a
+        WHERE a.email = #{email}
+    </select>
 
 </mapper>
